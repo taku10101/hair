@@ -1,94 +1,145 @@
-# Web Template
+# HairVision 3D - 3D Hair Styling Platform
 
-React + TypeScript のWebアプリケーションテンプレート。フロントエンドとバックエンドを分離した、高速な開発環境です。
+🎨 Revolutionary hair styling platform combining 3D modeling, AI analysis, and real-time collaboration between customers and stylists.
 
-## プロジェクト構成
+## 🎯 Project Overview
 
-このプロジェクトは pnpm workspace を使用したモノレポ構造です：
+**Vision**: Transform the hair styling experience by bridging the communication gap between customers and stylists through advanced 3D visualization and AI-powered recommendations.
 
-- **[frontend](./frontend/)** - React + Vite + TypeScript フロントエンドアプリケーション
-  - UI コンポーネント: shadcn/ui、TanStack Table
-  - データフェッチング: SWR
-  - スタイリング: TailwindCSS v4
+**Key Features**:
+- 🎭 **3D Hair Simulation**: Realistic hair modeling and physics simulation
+- 🤖 **AI Face Analysis**: Automatic face recognition and style recommendations  
+- 📱 **AR Preview**: Real-time hair style try-on experience
+- 💬 **Stylist Collaboration**: Real-time chat and booking with beauty salons
+- 🔐 **Secure User Management**: Multi-role authentication and privacy protection
 
-- **[backend](./backend/)** - Hono + Prisma バックエンド API
-  - Web フレームワーク: Hono
-  - ORM: Prisma
-  - API ドキュメント: Zod OpenAPI 
+## 📋 Comprehensive Documentation
 
-## クイックスタート
+> **📚 [View Complete Technical Documentation →](./docs/README.md)**
+
+Our comprehensive design documentation includes:
+
+### 🛠️ Technical Specifications
+- **3D & AI Implementation** (6-8 weeks) - Three.js + MediaPipe + TensorFlow.js
+- **Frontend Foundation** (3-4 weeks) - Next.js 14 + TypeScript + Tailwind CSS  
+- **Backend & Database** (4-5 weeks) - Supabase + PostgreSQL + Row Level Security
+- **Authentication System** (3-4 weeks) - Multi-role security with GDPR compliance
+- **Salon Integration** (5-6 weeks) - Real-time chat and booking platform
+- **Infrastructure & CI/CD** (2-3 weeks) - Vercel + GitHub Actions deployment
+- **Testing Strategy** (Ongoing) - Automated testing and quality assurance
+
+### 📊 Project Management
+- **Development Process** - 13-member team, Agile 2-week sprints
+- **Timeline & Milestones** - 18-month roadmap (MVP → Expansion → Full Platform)
+- **KPI Tracking** - Technical and business metrics
+
+## 🚀 Quick Start
 
 ```bash
-# 依存関係のインストール（ルートで一度実行）
+# Install dependencies
 pnpm install
 
-# フロントエンドとバックエンドを並行起動
+# Start development servers
 pnpm dev
 
-# 全パッケージをビルド
+# Run all packages
 pnpm build
-
-# 全パッケージでテスト実行
 pnpm test
 ```
 
-### データベース関連コマンド
+## 🏗️ Technology Stack
 
-```bash
-# backend ディレクトリで実行
-
-# Prisma クライアントを生成
-pnpm prisma:generate
-
-# マイグレーションを実行
-pnpm prisma:migrate
-
-# Prisma Studio を起動（GUIでデータ編集）
-pnpm prisma:studio
-
-# データベーススキーマのMarkdownドキュメントを生成
-pnpm prisma:docs
-# → docs/database/schema.md にER図とテーブル定義が生成されます
+```
+Frontend:  Next.js 14 + TypeScript + Three.js + Tailwind CSS
+Backend:   Supabase + PostgreSQL + API Routes
+Auth:      Supabase Auth + Row Level Security  
+Deploy:    Vercel + GitHub Actions CI/CD
+3D/AI:     MediaPipe + TensorFlow.js + WebAssembly + GPU acceleration
+Real-time: Supabase Realtime + WebSocket
 ```
 
-## 開発ガイドライン
+## 👥 Team Structure (13 members)
 
-詳細な開発ガイドラインは [CLAUDE.md](./CLAUDE.md) を参照してください。
+| Role | Count | Responsibilities |
+|------|-------|------------------|
+| **Product Manager** | 1 | Requirements, stakeholder coordination, roadmap |
+| **Frontend Engineers** | 3 | UI/UX, 3D visualization, responsive design |
+| **Backend Engineers** | 2 | API design, database optimization, authentication |
+| **3D & AI Engineers** | 4 | 3D modeling, AI face analysis, AR preview |
+| **QA & Infrastructure** | 3 | Testing automation, CI/CD, monitoring |
 
-### プロジェクトドキュメント
+## 📅 Development Timeline
 
-包括的なプロジェクトドキュメントは [docs/project-docs/](./docs/project-docs/) ディレクトリにまとめています：
+### Phase 1: MVP (6 months) 🎯
+- Basic 3D hair scanning and simulation
+- Salon search and booking functionality  
+- User authentication and profile management
+- **Target**: 30 salons, 10,000 users
 
-- **[プロジェクトドキュメント総合案内](./docs/project-docs/README.md)** - 全ドキュメントの索引
-- **[Setup.md](./docs/project-docs/Setup.md)** - 開発環境のセットアップ手順
-- **[OpenAPI仕様書](./docs/project-docs/OpenAPI-Spec.md)** - API エンドポイントの詳細仕様
-- **[データベーススキーマ](./docs/project-docs/Database-Schema.md)** - ER図とテーブル定義書
-- **[テスト観点一覧](./docs/project-docs/Test-Scenarios.md)** - テストシナリオと観点
+### Phase 2: Expansion (12 months) 🚀
+- Advanced AI precision and detailed 3D modeling
+- Stylist management dashboard and tools
+- Real-time AR preview functionality
+- **Target**: 300 salons, 100,000 users
 
-### 開発ドキュメント
+### Phase 3: Full Platform (18 months) 💎
+- Physics-based hair simulation
+- Social features and user community
+- Voice interface integration
+- **Target**: 1,000 salons, 500,000 users, $50,000/month revenue
 
-#### 全体ガイド
+## 🎯 Success Metrics
 
-[.ai-guide](./.ai-guide/index.md) ディレクトリに開発用のガイドを配置しています：
+### Technical Excellence
+- **AI Accuracy**: 95%+ face recognition success rate
+- **Performance**: 60FPS 3D rendering, <3 second page load
+- **Quality**: 80%+ test coverage, 95%+ E2E test success rate
+- **Reliability**: 99.9%+ system uptime
 
-- [アーキテクチャ概要](./.ai-guide/architecture.md) - システム構成と設計方針
-- [コーディング規約](./.ai-guide/coding-rules.md) - コードスタイルと命名規則
-- [環境構築](./.ai-guide/environment.md) - 開発環境のセットアップ手順
-- [テスト方針](./.ai-guide/testing.md) - テストの方針と実装方法
-- [開発フロー](./.ai-guide/workflow.md) - 開発の進め方
-- [データ取扱方針](./.ai-guide/data-handling.md) - データの扱い方
-- [コミット・PR](./.ai-guide/commit-and-pr.md) - コミットとプルリクエストのガイドライン
+### Business Impact
+- **User Engagement**: 90%+ task completion rate
+- **Conversion**: 20%+ booking conversion from 3D designs
+- **Growth**: 50%+ monthly active user growth
+- **Revenue**: $50,000+ monthly recurring revenue (18 months)
 
-#### AI 開発支援
+## 📁 Project Structure
 
-- [AIプロンプト集](./.ai-guide/ai-prompts.md) - AI 活用のプロンプト例
-- [AI制約事項](./.ai-guide/ai-limitations.md) - AI 利用時の注意点
+This project uses pnpm workspace monorepo architecture:
 
-#### パッケージ別ドキュメント
+- **[frontend/](./frontend/)** - Next.js 14 + TypeScript application
+  - 3D Visualization: Three.js + React Three Fiber
+  - UI Components: Tailwind CSS + Radix UI  
+  - State Management: Zustand + SWR
 
-- **フロントエンド**: [ドキュメント一覧](./frontend/.ai-guide/index.md) - React コンポーネント、ルーティング、状態管理
-- **バックエンド**: [ドキュメント一覧](./backend/.ai-guide/index.md) - API エンドポイント、ビジネスロジック、データベース
+- **[backend/](./backend/)** - Supabase + PostgreSQL API
+  - Authentication: Supabase Auth + RLS
+  - Real-time: Supabase Realtime
+  - File Storage: Supabase Storage
 
-## ライセンス
+- **[docs/](./docs/)** - Comprehensive technical documentation
+  - Technical Specifications (8 documents)
+  - Project Management Plans
+  - Implementation Guides
+
+## 🤝 Contributing
+
+1. **For Developers**: Start with [technical documentation](./docs/README.md) based on your specialty
+2. **For Product Team**: Review [project management documentation](./docs/project-management/)  
+3. **For Stakeholders**: Begin with [executive summary](./docs/project-management/hair_project_executive_summary.md)
+
+Each specification includes:
+- ✅ Detailed implementation plans with code examples
+- 📅 Week-by-week development schedules  
+- 🎯 Clear success criteria and testing guidelines
+- ⚠️ Risk assessment and mitigation strategies
+- 🛠️ Production-ready templates and configurations
+
+## 📄 License
 
 MIT
+
+---
+
+**Status**: 🎯 Design Phase Complete - Ready for Implementation  
+**Next Phase**: Team onboarding and development sprint planning  
+**Last Updated**: March 20, 2026
